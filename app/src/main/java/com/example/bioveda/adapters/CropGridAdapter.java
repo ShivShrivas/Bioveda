@@ -1,6 +1,7 @@
 package com.example.bioveda.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.bioveda.Crop_Quantity;
 import com.example.bioveda.MainActivity;
 import com.example.bioveda.R;
 
@@ -30,6 +32,12 @@ public class CropGridAdapter extends RecyclerView.Adapter<CropGridAdapter.CropGr
     @Override
     public void onBindViewHolder(@NonNull CropGridViewHolder holder, int position) {
         holder.allToipcsItemImg.setImageDrawable(context.getDrawable(array[position]));
+        holder.allToipcsItemImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(context, Crop_Quantity.class));
+            }
+        });
 
     }
 

@@ -16,6 +16,7 @@ import java.sql.Array;
 
 public class MainActivity extends AppCompatActivity {
 RecyclerView recyclerView;
+
 int[] array= new int[]{R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6,R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6};
 Button generateCropPrice;
     @Override

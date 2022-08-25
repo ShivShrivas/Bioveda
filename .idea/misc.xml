@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/BSNShivam/Downloads/Bioveda/app/src/main/res/drawable/card_bg.xml" value="0.1845" />
+        <entry key="..\:/Users/BSNShivam/Downloads/Bioveda/app/src/main/res/drawable/cardbg.xml" value="0.1845" />
+        <entry key="..\:/Users/BSNShivam/Downloads/Bioveda/app/src/main/res/drawable/sha.xml" value="0.1845" />
+        <entry key="..\:/Users/BSNShivam/Downloads/Bioveda/app/src/main/res/layout/activity_crop_quantity.xml" value="0.22" />
+        <entry key="..\:/Users/BSNShivam/Downloads/Bioveda/app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/BSNShivam/Downloads/Bioveda/app/src/main/res/layout/all_topics_item_card.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/BSNShivam/Downloads/Bioveda/app/src/main/res/layout/crop_quantity_item_card.xml" value="0.33" />
         <entry key="..\:/Users/DIGVIJAY/AndroidStudioProjects/Bioveda/app/src/main/res/drawable/card_bg.xml" value="0.13" />
         <entry key="..\:/Users/DIGVIJAY/AndroidStudioProjects/Bioveda/app/src/main/res/drawable/dull_img_gradient_bg.xml" value="0.13" />
         <entry key="..\:/Users/DIGVIJAY/AndroidStudioProjects/Bioveda/app/src/main/res/drawable/ic_access_time_filled.xml" value="0.2115" />
