@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,7 @@ import com.google.android.material.tabs.TabLayout;
 public class Generate_Crop_Price extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
-    Button generateCropPrice,generateAveragePrice;
+    Button generateCropPrice,generateAveragePrice,getGenerateQuantity;
     ConstraintLayout constraintLayout4,constraintLayout3,constraintLayout5;
     RecyclerView recyclerView2;
     int[] array= new int[]{R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6,R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6};
@@ -31,6 +32,7 @@ public class Generate_Crop_Price extends AppCompatActivity {
         textViewQuantity=findViewById(R.id.textViewQuantity);
         textViewCrop=findViewById(R.id.textViewCrop);
         generateCropPrice=findViewById(R.id.generateCropPrice);
+        getGenerateQuantity=findViewById(R.id.button);
         generateAveragePrice=findViewById(R.id.generateAveragePrice);
         constraintLayout4=findViewById(R.id.constraintLayout4);
         constraintLayout3=findViewById(R.id.constraintLayout3);
@@ -43,15 +45,46 @@ public class Generate_Crop_Price extends AppCompatActivity {
                 constraintLayout5.setVisibility(View.INVISIBLE);
             }
         });
+        getGenerateQuantity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                constraintLayout4.setVisibility(View.INVISIBLE);
+                constraintLayout3.setVisibility(View.VISIBLE);
+                constraintLayout5.setVisibility(View.INVISIBLE);
+            }
+        });
         generateAveragePrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(Generate_Crop_Price.this,Crop_Graph.class));
+
+            }
+        });
+
+        textViewQuantity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                constraintLayout4.setVisibility(View.INVISIBLE);
+                constraintLayout3.setVisibility(View.VISIBLE);
+                constraintLayout5.setVisibility(View.INVISIBLE);
+            }
+        });
+        textViewCrop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 constraintLayout4.setVisibility(View.INVISIBLE);
                 constraintLayout3.setVisibility(View.INVISIBLE);
                 constraintLayout5.setVisibility(View.VISIBLE);
             }
         });
-
+        textViewParameter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                constraintLayout4.setVisibility(View.VISIBLE);
+                constraintLayout3.setVisibility(View.INVISIBLE);
+                constraintLayout5.setVisibility(View.INVISIBLE);
+            }
+        });
 
         GridLayoutManager gridLayoutManager=new GridLayoutManager(this,3);
         recyclerView2.setLayoutManager(gridLayoutManager);

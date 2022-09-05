@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Bioveda"
         tools:targetApi="31">
         <activity
+            android:name=".Crop_Graph"
+            android:exported="false" />
+        <activity
             android:name=".Crop_Quantity"
             android:exported="false" />
         <activity
